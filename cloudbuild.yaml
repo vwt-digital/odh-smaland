@@ -2,6 +2,7 @@
 steps:
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk:latest'
     entrypoint: 'bash'
+    dir: 'functions/kvstore'
     id: 'deploy function'
     args:
       - '-c'
