@@ -1,0 +1,15 @@
+---
+steps:
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk:latest'
+    entrypoint: 'bash'
+    id: 'deploy function'
+    args:
+      - '-c'
+      - |
+        gcloud functions deploy "${PROJECT_ID}"-kvstore \
+          --entry-point=kvstore \
+          --runtime=python37 \
+          --trigger-http \
+          --project=${PROJECT_ID} \
+          --region=europe-west1 \
+          --memory=128MB
