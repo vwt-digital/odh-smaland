@@ -5,7 +5,14 @@ with open("config.json") as config_file:
 
 
 def kvstore(request):
-    keys = request.path[4:].split("/")  # remove the /kv/
+    key = request.path[4:]  # remove the /kv/
+
+    request_json = request.get_json(silent=True)
+
+    if request_json and "key" in request_json:
+        key = request_json["key"]
+
+    keys = key.split("/")
 
     try:
         conf = config

@@ -6,7 +6,7 @@ import requests
 from requests.packages.urllib3.util.retry import Retry
 
 
-def test_args():
+def test_path():
     port = os.getenv(
         "PORT", 8080
     )  # Each functions framework instance needs a unique port
