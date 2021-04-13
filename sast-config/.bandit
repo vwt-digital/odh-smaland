@@ -1,0 +1,3 @@
+[bandit]
+exclude: /functions/kvstore/test
+

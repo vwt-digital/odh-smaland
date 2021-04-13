@@ -1,0 +1,9 @@
+.gcloudignore
+.git
+.gitignore
+
+config.json.example
+
+test/*
+test-requirements.txt
+
