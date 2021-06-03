@@ -1,3 +1,4 @@
+[![CodeFactor](https://www.codefactor.io/repository/github/vwt-digital/odh-smaland/badge)](https://www.codefactor.io/repository/github/vwt-digital/odh-smaland)
 
 # odh-smaland
 
