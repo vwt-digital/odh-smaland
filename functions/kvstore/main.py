@@ -21,4 +21,4 @@ def kvstore(request):
     except Exception:
         return "Not Found", 404
 
-    return json.dumps(conf), 200, {"Content-Type": "application/json"}
+    return json.dumps(conf).strip('"'), 200, {"Content-Type": "application/json"}
